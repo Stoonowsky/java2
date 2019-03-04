@@ -39,6 +39,7 @@ public class Person implements EmailRecipient {
 
         System.out.println(((Student) s1).getGrades());
         System.out.println(((Student) s1).getGradesAverage());
+        System.out.println("sprawdzanko gita ffs!");
 
 
     }
