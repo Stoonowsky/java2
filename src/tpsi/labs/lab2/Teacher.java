@@ -2,15 +2,9 @@ package tpsi.labs.lab2;
 
 public class Teacher extends Person implements EmailRecipient{
     private String courseName;
-    private String emailAddress;
-    @Override
-    public String getEmailAddress(){
-        return emailAddress;
-    }
 
     public Teacher(String firstName, String lastName,String emailAddress, String courseName){
-        super(firstName, lastName);
-        this.emailAddress=emailAddress;
+        super(firstName, lastName, emailAddress);
         this.courseName=courseName;
     }
 

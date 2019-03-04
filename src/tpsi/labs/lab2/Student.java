@@ -4,15 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student extends Person implements EmailRecipient{
-    private String emailAddress;
-    @Override
-    public String getEmailAddress(){
-        return emailAddress;
-    }
+
+
     private String groupId;
     public Student(String firstName, String lastName, String emailAddress, String groupId) {
-        super(firstName, lastName);
-        this.emailAddress=emailAddress;
+        super(firstName, lastName, emailAddress);
         this.groupId = groupId;
 
     }
