@@ -5,13 +5,17 @@ import java.util.List;
 
 public class Student extends Person implements EmailRecipient{
 
-
     private String groupId;
+    private List<Double> grades = new ArrayList<>();
+    public List<Double> getGrades() {
+        return grades;
+    }
+
     public Student(String firstName, String lastName, String emailAddress, String groupId) {
         super(firstName, lastName, emailAddress);
         this.groupId = groupId;
-
     }
+
     public String getGroupId() {
         return groupId;
     }
@@ -19,10 +23,6 @@ public class Student extends Person implements EmailRecipient{
         this.groupId = groupId;
     }
 
-    private List<Double> grades = new ArrayList<>();
-    public List<Double> getGrades(){
-        return grades;
-    }
     public void addGrade(double grade){
         grades.add(grade);
     }

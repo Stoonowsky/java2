@@ -10,6 +10,7 @@ public class Main {
         Student s1 = new Student("Jan", "Kowalski", "jan.kowalski@zu.edu.pl", "32B");
         Student s2 = new Student("Hermenegilda", "Nowak", "hermenegilda.nowak@zut.edu.pl", "32B");
         Teacher t1 = new Teacher("Brajan", "Kocur", "brajan.kocur@zut.edu.pl", "PTD");
+        Teacher t2 = new Teacher("Andrzej", "Takise", "endrju@zut.edu.pl", "WTF");
         Faculty f1 = new Faculty("WI", "wi@zut.edu.pl");
         EmailRecipient[] spamList = new EmailRecipient[5];
         spamList[0] = zut;
@@ -28,12 +29,12 @@ public class Main {
         s1.addGrade(2.5);
 
         f1.addTeacher(t1);
+        f1.addTeacher(t2);
         zut.addFaculty(f1);
 
 
         System.out.println(s1.getGrades());
         System.out.println(s1.getGradesAverage());
-        System.out.println("sprawdzanko gita ffs!");
         System.out.println(f1.getTeachers());
         System.out.println(zut.getFaculties());
 

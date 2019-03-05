@@ -1,6 +1,7 @@
 package tpsi.labs.lab2;
 
 public class Teacher extends Person implements EmailRecipient{
+
     private String courseName;
 
     public Teacher(String firstName, String lastName,String emailAddress, String courseName){
